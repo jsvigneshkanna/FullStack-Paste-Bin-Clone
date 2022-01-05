@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Form = () => {
+  const [snippets, setsnippets] = useState("");
   const saveSnippet = () => {
-    console.log("fs");
+    fetch("/api/snippet", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ snippets }),
+    });
   };
   return (
     <div class="text-center">
@@ -12,6 +19,9 @@ const Form = () => {
           aria-label="With textarea"
           id="snippetInput"
           style={{ height: "340px" }}
+          onChange={(e) => {
+            setsnippets(e.target.value);
+          }}
         ></textarea>
         <label for="snippetInput">Enter your Snippets</label>
       </div>
