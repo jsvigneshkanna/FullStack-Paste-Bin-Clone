@@ -2,6 +2,10 @@
 
 Building a full stack paste bin clone with tech stack as NextJS(React), MongoDB for database, Bootstrap for styling. Come lets all learn together 👯
 
+# Live Link
+
+[Live...](https://vkpastebin.vercel.app/)
+
 # Tech Stacks Used
 
 1. Nextjs
