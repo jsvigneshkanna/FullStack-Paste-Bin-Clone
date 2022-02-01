@@ -3,19 +3,19 @@ import React, { useState } from "react";
 const Form = () => {
   const [snippets, setsnippets] = useState("");
   const saveSnippet = () => {
-    fetch("/api/snippet", {
+    fetch("/api/snippets", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ snippets }),
+      body: JSON.stringify({ content: snippets }),
     });
   };
   return (
-    <div class="text-center">
-      <div class="input-group form-floating">
+    <div className="text-center">
+      <div className="input-group form-floating">
         <textarea
-          class="form-control"
+          className="form-control"
           aria-label="With textarea"
           id="snippetInput"
           style={{ height: "340px" }}
@@ -23,9 +23,9 @@ const Form = () => {
             setsnippets(e.target.value);
           }}
         ></textarea>
-        <label for="snippetInput">Enter your Snippets</label>
+        <label htmlFor="snippetInput">Enter your Snippets</label>
       </div>
-      <button onClick={saveSnippet} type="button" class=" btn btn-outline-success" style={{ marginTop: 20 }}>
+      <button onClick={saveSnippet} type="button" className=" btn btn-outline-success" style={{ marginTop: 20 }}>
         Success
       </button>
     </div>
