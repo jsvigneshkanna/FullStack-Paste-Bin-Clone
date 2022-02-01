@@ -1,17 +1,20 @@
 import Head from "next/head";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css"; // NPM Bootstrap
 import Form from "../components/Form";
+
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Paste Bin</title>
         <meta name="description" content="Paste Bin for sharing your own thoughts" />
-        <link rel="icon" href="/icon.ico" />
+        <link rel="icon" href="icon.png" />
       </Head>
-      <div className="text-center" style={{ marginTop: 20 }}>
+      <div className="text-center" style={{ marginTop: 30, marginBottom: 30 }}>
         <h1>Welcome to Paste Bin 📑</h1>
-        <p>Here you can share some of your thoughts with your closed ones with slugified url </p>
+        <h4 style={{ color: "red" }}>
+          Here you can share some of your thoughts with your closed ones with slugified url{" "}
+        </h4>
       </div>
       <Form />
     </div>
