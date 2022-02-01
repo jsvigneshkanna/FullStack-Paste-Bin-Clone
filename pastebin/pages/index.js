@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Paste Bin for sharing your own thoughts" />
         <link rel="icon" href="/icon.ico" />
       </Head>
-      <div class="text-center" style={{ marginTop: 20 }}>
+      <div className="text-center" style={{ marginTop: 20 }}>
         <h1>Welcome to Paste Bin 📑</h1>
         <p>Here you can share some of your thoughts with your closed ones with slugified url </p>
       </div>
