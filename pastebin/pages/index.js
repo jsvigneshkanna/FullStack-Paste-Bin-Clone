@@ -1,5 +1,4 @@
 import Head from "next/head";
-import "bootstrap/dist/css/bootstrap.css"; // NPM Bootstrap
 import Form from "../components/Form";
 
 export default function Home() {
@@ -12,11 +11,11 @@ export default function Home() {
       </Head>
       <div className="text-center" style={{ marginTop: 30, marginBottom: 30 }}>
         <h1>Welcome to Paste Bin 📑</h1>
-        <h4 style={{ color: "red" }}>
+        <h5 style={{ color: "red" }}>
           Here you can share some of your thoughts with your closed ones with slugified url{" "}
-        </h4>
+        </h5>
       </div>
-      <Form />
+      {typeof window !== "undefined" ? <Form /> : null}
     </div>
   );
 }
