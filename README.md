@@ -4,7 +4,7 @@ Building a full stack paste bin clone with tech stack as NextJS(React), MongoDB 
 
 # Live Link
 
-[Live...](https://vkpastebin.vercel.app/)
+[🚀Live App Click Me 🚀...](https://vkpastebin.vercel.app/)
 
 # Tech Stacks Used
 
