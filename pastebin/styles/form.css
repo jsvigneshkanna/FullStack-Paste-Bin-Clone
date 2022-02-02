@@ -1,0 +1,24 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-msg {
+  text-align: center;
+  border: 3px solid red;
+  background-color: yellow;
+  padding: 10px;
+  margin-top: 80px;
+  max-width: max-content;
+}
+.error-msg > p {
+  font-weight: bold;
+  font-size: large;
+}
+@media only screen and (max-width: 380px) {
+  textarea {
+    max-height: 210px;
+  }
+}

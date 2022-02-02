@@ -11,7 +11,7 @@ Building a full stack paste bin clone with tech stack as NextJS(React), MongoDB 
 1. Nextjs
 2. React
 3. Bootstrap
-4. Mongodb
+4. Supabase/ Mongodb
 
 # Reference
 

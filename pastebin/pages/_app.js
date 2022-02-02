@@ -1,10 +1,11 @@
 import Head from "next/head";
 import "../styles/globals.css";
+import "../styles/form.css";
 import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div>
       <Head>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -27,7 +28,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar />
         {typeof window !== "undefined" && <Component {...pageProps} />}
       </div>
-    </>
+    </div>
   );
 }
 
