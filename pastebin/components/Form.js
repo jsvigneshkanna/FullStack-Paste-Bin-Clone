@@ -4,7 +4,7 @@ const Form = () => {
   const [snippets, setsnippets] = useState("");
   const [response, setresponse] = useState("");
   const saveSnippet = () => {
-    const { error } = fetch("/api/saveSnippets", {
+    const { error } = fetch("/api/snippet", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
