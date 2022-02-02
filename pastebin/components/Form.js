@@ -4,14 +4,16 @@ const Form = () => {
   const [snippets, setsnippets] = useState("");
   const [response, setresponse] = useState("");
   const saveSnippet = () => {
-    const response = fetch("/api/snippets", {
+    const { error } = fetch("/api/saveSnippets", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
       },
       body: JSON.stringify({ content: snippets }),
     });
-    setresponse(response);
+    if (error) {
+      setresponse(response);
+    }
   };
   if (response != "") {
     return (

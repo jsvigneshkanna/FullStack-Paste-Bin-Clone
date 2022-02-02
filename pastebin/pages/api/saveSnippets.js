@@ -22,6 +22,6 @@ export default async function (req, res) {
 }
 
 const saveData = async (supabase, snippet) => {
-  const { data, error } = await supabase.from("sippets").insert([{ snippet: snippet }]);
+  const { data, error } = await supabase.from("snippets").insert([{ snippet: snippet }]);
   return error;
 };
