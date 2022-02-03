@@ -1,3 +1,24 @@
 .snippet_container {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slug_header {
+  text-decoration: 2px solid rgb(132, 0, 255) underline;
+  margin-bottom: 50px;
+  font-weight: bolder;
+  color: rgb(165, 2, 2);
+}
+.slug_snippet {
+  border: 2px solid rebeccapurple;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px 2px rgb(1, 137, 248);
+  font-size: large;
+  font-weight: 600;
 }

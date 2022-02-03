@@ -2,6 +2,7 @@ import Head from "next/head";
 import "../styles/globals.css";
 import "../styles/form.css";
 import "../styles/snippetsdisplay.css";
+import "../styles/snippetdisplay.css";
 import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
