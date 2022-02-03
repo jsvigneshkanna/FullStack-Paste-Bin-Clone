@@ -3,7 +3,9 @@ import "../styles/globals.css";
 import "../styles/form.css";
 import "../styles/snippetsdisplay.css";
 import "../styles/snippetdisplay.css";
+import "../styles/footer.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -30,6 +32,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar />
         {typeof window !== "undefined" && <Component {...pageProps} />}
       </div>
+      <Footer />
     </div>
   );
 }

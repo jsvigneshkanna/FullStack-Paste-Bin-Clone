@@ -6,7 +6,7 @@ const Snippet = ({ stringSnippet }) => {
   return (
     <div className="snippet_container">
       <h1 className="slug_header">This is my Snippet 📝</h1>
-      <p className="slug_snippet">{stringSnippet}</p>
+      <p className="">{stringSnippet}</p>
     </div>
   );
 };
