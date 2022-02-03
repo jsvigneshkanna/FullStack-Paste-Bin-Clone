@@ -20,7 +20,7 @@ const snippetDisplay = ({ snippets }) => {
                 <tr className="snippet">
                   <td className="content">{snippet.snippet}</td>
                   <td className="slug">
-                    <a href={`/${snippet.slug}`}>click 🚀</a>
+                    <a href={`/snippet/${snippet.slug}`}>click 🚀</a>
                   </td>
                 </tr>
               );
